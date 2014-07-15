@@ -1,8 +1,18 @@
 android-views
 =============
 
-All the views i have design for android.
+![Alt text](https://github.com/geftimov/android-views/blob/master/pictures/alert-dialog-fragment/alert-dialog-fragment.png?raw=true)
 
-[dialogs](https://github.com/geftimov/android-views/tree/master/dialogs)
+How to use
+=============
 
+```
+        AlertDialogFragment alertDialogFragment = new AlertDialogFragment.Builder().
+            message("what").
+            positive("ok").
+            negative("negative").
+            build();
+        
+        alertDialogFragment.show(getFragmentManager(),"tag");
+```
 
